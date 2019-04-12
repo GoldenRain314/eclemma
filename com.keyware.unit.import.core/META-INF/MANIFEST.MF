@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: com.keyware.unit.core; singleton:=true
+Bundle-Version: 3.0.0.qualifier
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Export-Package: com.keyware.unit.core;x-friends:="com.keyware.unit.ui",
+ com.keyware.unit.core.analysis;x-friends:="com.keyware.unit.ui",
+ com.keyware.unit.core.launching;x-friends:="com.keyware.unit.ui",
+ com.keyware.unit.internal.core;x-internal:=true,
+ com.keyware.unit.internal.core.analysis;x-internal:=true,
+ com.keyware.unit.internal.core.launching;x-internal:=true
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.debug.core,
+ org.eclipse.jdt.core,
+ org.eclipse.jdt.launching,
+ com.keyware.unit.co.agent;bundle-version="1.0.0",
+ com.keyware.unit.co.core;bundle-version="1.0.0",
+ com.keyware.unit.co.report;bundle-version="1.0.0"
+Bundle-Activator: com.keyware.unit.internal.core.EclEmmaCorePlugin
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

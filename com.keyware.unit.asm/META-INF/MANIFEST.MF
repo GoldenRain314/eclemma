@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Asm-all
+Bundle-SymbolicName: com.keyware.unit.asm
+Bundle-Version: 1.0.0
+Automatic-Module-Name: asm-all
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: org.objectweb.asm,
+ org.objectweb.asm.commons,
+ org.objectweb.asm.signature,
+ org.objectweb.asm.tree,
+ org.objectweb.asm.tree.analysis,
+ org.objectweb.asm.util,
+ org.objectweb.asm.xml
